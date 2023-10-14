@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from marshmallow import Schema, fields
 from datetime import datetime as dt
 
+import psycopg2
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"]='postgresql://postgres:postgres@localhost/bills'
